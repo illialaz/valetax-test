@@ -1,24 +1,35 @@
 {
   "name": "valetax-test",
+  "type": "module",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "npm@10.8.2",
+  "engines": {
+    "node": "20.15.1"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "npx eslint . --fix",
+    "format": "npx prettier . --write"
   },
   "dependencies": {
+    "next": "14.2.5",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.5"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.2.5"
+    "eslint-config-next": "14.2.5",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "prettier": "^3.3.3",
+    "typescript": "^5"
   }
 }
